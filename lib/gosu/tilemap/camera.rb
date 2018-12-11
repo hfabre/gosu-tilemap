@@ -35,5 +35,10 @@ module Gosu
     def update_y(y)
       @offset_y -= y
     end
+
+    def map_position(x, y)
+      @offset_x = x
+      @offset_y = y
+    end
   end
 end

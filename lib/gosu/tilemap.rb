@@ -37,7 +37,7 @@ module Gosu
 
       @tiles = []
       infos['tiles'].each do |k, v|
-        @tiles << Gosu::Tile.new(k.to_s, v.delete('tile'), v)
+        @tiles << Gosu::Tile.new(k.to_s, v.delete('tile'), v['attributes'])
       end
 
       @board = infos['map']
